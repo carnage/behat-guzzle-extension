@@ -96,7 +96,7 @@ class RawGuzzleContext implements GuzzleAwareContext
 
                 return;
             } catch (RuntimeException $e) {
-                continue;
+                null;
             }
 
             try {
@@ -104,7 +104,7 @@ class RawGuzzleContext implements GuzzleAwareContext
 
                 return;
             } catch (RuntimeException $e) {
-                continue;
+                null;
             }
 
             return;
